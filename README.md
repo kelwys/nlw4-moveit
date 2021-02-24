@@ -1,6 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+
+<div align="center">
+  <img alt="logo"  src="public/logo-full.svg">
+</div>
+
+
+<h3 align="center">
+    Application developed in the fourth edition of Rocketseat Next Level Week 💻🚀
+</h3>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/kelwys/nlw4-moveit?color=%2304D361">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/kelwys/nlw4-moveit">
+  
+  <a href="https://github.com/kelwys/nlw4-moveit/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/kelwys/nlw4-moveit">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/kelwys/nlw4-moveit/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/kelwys/nlw4-moveit?style=social">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#about-the-project">About The Project</a> •
+  <a href="#layout">Layout</a> •
+  <a href="#technologies">Technologies</a> • 
+  <a href="#contribution">Contribution</a> • 
+  <a href="#author">Author</a> • 
+  <a href="#license">License</a>
+</p>
+
+<h4 align="center">
+	🚧  Building 🚀  🚧
+</h4>
+</br>
+
+
+<h2 id="about-the-project" > ⏰📈 About The Project </h2>
+
+Track your time and be more productive.
+
+Project developed during **NLW4 - Next Level Week** offered by [Rocketseat](https://blog.rocketseat.com.br/primeira-next-level-week/). NLW is an online experience with lots of practical content, challenges and hacks where the content is available for a week.
+
+
+---
+
+<h2 id="layout" >🎨  Layout </h2>
+
+The layout of Move.it is available in:
+
+<a href="https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/?viewer=1&node-id=">
+  <img alt="Figama layout" src="https://img.shields.io/badge/Figma%20-Layout-%2304D361">
+</a>
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./public/banner.png" width="400px">
+</p>
+
+---
+
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -9,26 +71,46 @@ npm run dev
 # or
 yarn dev
 ```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<h2 id="technologies"> 🛠 Technologies </h2>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The following tools were used in the construction of the project:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **[React](https://reactjs.org)**
+- **[Next](https://nextjs.org)**
+- **[TypeScript](https://www.typescriptlang.org/)**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+<h2 id="contribution"> 💪 Contribution </h2>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<h2 id="author"> 💻 Author </h2>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img style="border-radius: 50%;" src="https://github.com/kelwys.png" width="100px;" alt="photo author"/>
+
+ <br />
+ <sub><b>Kelwy Oliveira</b></sub></a> <a href="https://www.linkedin.com/in/kelwyoliveira/" title="kelwy`s linkedin">🚀</a>
+ <br />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Kelwy-1692B4?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/kelwyoliveira/)](https://www.linkedin.com/in/kelwyoliveira/) 
+[![Gmail Badge](https://img.shields.io/badge/-kelwyduarte@gmail.com-4682B4?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:kelwyduarte@gmail.com)](mailto:kelwyduarte@gmail.com)
+
+---
+
+<h2 id="license"> 📝 License </h2>
+
+This project is under the [MIT](./LICENSE) license.
+
+---

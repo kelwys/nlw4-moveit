@@ -98,7 +98,7 @@ Contributions are what make the open source community such an amazing place to b
 
 <h2 id="author"> 💻 Author </h2>
 
-<img style="border-radius: 50%;" src="https://github.com/kelwys.png" width="100px;" alt="photo author"/>
+<img style="border-radius: 50% !important;" src="https://github.com/kelwys.png" width="100px;" alt="photo author"/>
 
  <br />
  <sub><b>Kelwy Oliveira</b></sub></a> <a href="https://www.linkedin.com/in/kelwyoliveira/" title="kelwy`s linkedin">🚀</a>

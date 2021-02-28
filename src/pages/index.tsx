@@ -1,61 +1,61 @@
+import React, { useCallback, useRef, useState } from 'react';
+import { useRouter } from 'next/router';
+import { FaGithub, FaArrowRight } from 'react-icons/fa';
+
+import styles from '../styles/pages/Login.module.css';
 import Head from 'next/head';
-import { GetServerSideProps } from 'next'
 
-import { CompletedChalenges } from '../components/CompletedChalenges';
-import { Countdown } from '../components/Countdown';
-import { ChallengeBox } from '../components/ChallengeBox';
-import { ExperienceBar } from '../components/ExperienceBar';
-import { Profile } from '../components/Profile';
+export default function Profile() {
+  const inputRef = useRef<HTMLInputElement>(null);
 
-import styles from '../styles/pages/Home.module.css'
-import { CountdownProvider } from '../contexts/CountdownContext';
-import React from 'react';
-import { ChallengesProvider } from '../contexts/ChallengsContext';
+  const [isFocused, setIsFocused] = useState(false);
 
-interface HomeProps {
-  level: number;
-  currentExperience: number;
-  challengesCompleted: number;
-}
+  const handleFocus = useCallback(() => {
+    setIsFocused(true);
+  }, []);
 
-export default function Home(props: HomeProps) {
+  const handleBlur = useCallback(() => {
+    setIsFocused(false);
+  }, []);
 
-  return (
-    <ChallengesProvider 
-      level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
-    >
-      <div className={styles.container}>
-        <Head>
-          <title>Home | Moveit</title>
-        </Head>
-        <ExperienceBar />
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChalenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
-      </div>
-    </ChallengesProvider>
-  )
-}
+  const { push } = useRouter();
+  const [username, setUsername] = useState('');
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
-  return {
-    props: {
-      level: Number(level), 
-      currentExperience: Number(currentExperience), 
-      challengesCompleted: Number(challengesCompleted)
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (username) {
+      push(`/${username}`);
     }
   }
+
+  return (
+    <div className={styles.container}>
+      <Head>
+        <title>Login | MoveIT</title>
+      </Head>
+      <div className={styles.containerLogin}>
+        <img src="/logo-white.svg" alt="Logo" />
+        <strong>Bem-vindo</strong>
+
+        <div className={styles.github}>
+          <FaGithub size={36} />
+          <span>Faça login com seu GitHub para começar.</span>
+        </div>
+
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Digite seu username"
+            onChange={(e) => setUsername(e.target.value)}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+            ref={inputRef}
+          />
+          <button type="submit">
+            <FaArrowRight size={24} />
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 }

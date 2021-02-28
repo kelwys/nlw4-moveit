@@ -39,19 +39,21 @@ export default function Home(props: HomeProps) {
         <Head>
           <title>Home | MoveIT</title>
         </Head>
-        <ExperienceBar />
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile {...user}/>
-              <CompletedChalenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
+        <div className={styles.content}>
+          <ExperienceBar />
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile {...user}/>
+                <CompletedChalenges />
+                <Countdown />
+              </div>
+              <div>
+                <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
+        </div>
       </div>
     </ChallengesProvider>
   )

@@ -25,11 +25,11 @@
 </p>
 
 <p align="center">
-  <a href="#about-the-project">About The Project</a> •
-  <a href="#layout">Layout</a> •
-  <a href="#technologies">Technologies</a> • 
-  <a href="#contribution">Contribution</a> • 
-  <a href="#author">Author</a> • 
+  <a href="#about-the-project">About The Project</a> |
+  <a href="#layout">Layout</a> |
+  <a href="#technologies">Technologies</a> | 
+  <a href="#contribution">Contribution</a> | 
+  <a href="#author">Author</a> | 
   <a href="#license">License</a>
 </p>
 
@@ -56,9 +56,7 @@ The layout of Move.it is available in:
   <img alt="Figama layout" src="https://img.shields.io/badge/Figma%20-Layout-%2304D361">
 </a>
 
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./public/banner.png" width="400px">
-</p>
+![moveit gif](./public/moveit.gif)
 
 ---
 
@@ -67,9 +65,20 @@ The layout of Move.it is available in:
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone Repository
+$ git clone https://github.com/kelwys/nlw4-moveit.git
+
+# Go to server folder
+$ cd nlw4-moveit
+
+# Install Dependencies
+$ yarn
+
+# Run Aplication
+$ yarn dev
+
+# Access localhost
+http://localhost:3000
 ```
 ---
 

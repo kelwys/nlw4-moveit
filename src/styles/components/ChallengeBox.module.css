@@ -21,22 +21,24 @@
 }
 
 .challengeNotActive strong {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.4;
 }
 
 .challengeNotActive p {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+  /* margin-top: 2rem; */
   line-height: 1.4;
   min-width: 70%;
-  margin-top: 3rem;
 }
 
-.challengeNotActive p img {
-  margin-bottom: 1rem;
+.challengeNotActive img {
+  /* margin-bottom: 1rem; */
+  width: 60px;
+  margin: 2rem 0;
 }
 
 .challengeActive {
@@ -74,6 +76,7 @@
 }
 
 .challengeActive footer {
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
